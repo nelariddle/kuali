@@ -1,0 +1,2815 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kuali Time</title>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <link type="text/css" href="css/ui-lightness/jquery-ui-1.8.1.custom.css" rel="stylesheet" /> -->
+<link type="text/css" href="css/ui-iu/jquery-ui-1.8.5.custom.css" rel="stylesheet" />
+<link type="text/css" href="css/tk.css?v=1.1" rel="stylesheet" />
+
+
+    
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.17.min.js"></script>
+<script type="text/javascript" src="js/date.min.js"></script>
+<script type="text/javascript" src="js/jquery.jclock.js"></script>
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
+<script type="text/javascript" src="js/jquery.tools.tooltip.min.js"></script>
+<script type="text/javascript" src="js/tk.js?v=1.1"></script>
+<script type="text/javascript" src="js/approval.js?v=1.1"></script>
+
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-67368116-1', 'auto', {'allowLinker': true});
+    ga('require', 'linker');
+    ga('linker:autoLink', ['uisapp2.iu.edu'] );
+    ga('send', 'pageview');
+
+</script>
+
+    
+        <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+        <META HTTP-EQUIV="Expires" CONTENT="-1">
+    
+
+</head>
+<body>
+<div class="headerarea" id="headerarea" >
+    
+</div>
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+<input type="hidden" id="tabId" value="timeDetail"/>
+
+<div id="tabs" class="ui-tabs ui-widget ui-widget-content ui-corner-all">
+    <div  role="banner" id="bannerDiv">
+        <ul class="ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all  ">
+			<span class="title ">
+				<img src="images/BlockIU_red.gif" style="width:1.5em;" alt="IU Logo"/>
+				<img src="images/kpme_logo.png" style="width:4em;" alt="Kuali logo"/>
+	        </span>
+	        <span class="yellowbanner">
+                
+                    
+                        
+                            
+                                <a href="#clock" class="skip" tabindex="1" aria-label="Skip Link to Tabs">Skip to Tab</a>
+                            
+                            
+                        
+                    
+                    
+                
+
+                 <a href="#content" class="skip" tabindex="1.1" aria-label="Skip Link to Content">Skip to Content</a>
+                <a href="#privacyNotice" class="skip" tabindex="1.2" aria-label="Skip Link to Privacy Notice">Skip to Privacy Notice</a>
+                
+                    
+                    
+                        
+                    
+                
+	         </span>
+            
+                <div class="university-disclaimer">
+                    Each employee is responsible for accurately recording their time and attendance hours using the TIME system.  Hours worked must be recorded at least daily, and must not be recorded in advance. <a target="_blank" href="https://policies.iu.edu/policies/fin-pay-020-recording-reviewing-time-worked-non-exempt-employees/index.html" tabindex="2" aria-label="Timekeeping Policy">Timekeeping Policy</a>.
+                </div>
+            
+            <div class="person-info">
+                <table class="" role="presentation">
+                    <tr>
+                        <td align="right" colspan="2">
+                            
+                            
+                                <a href="/kpme-prd/logout.do" style="font-size: .8em;" tabindex="3">Logout</a>
+                            
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td align="right"> Employee Name:</td>
+                        <td><a href="/kpme-prd/PersonInfo.do?methodToCall=showInfo" tabindex="4">Riddle, Nela M</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right"> Employee Id:</td>
+                        <td>2000669259</td>
+                    </tr>
+                    
+                    
+                        <tr>
+                            <td align="right"> Document Id:</td>
+                            <td id="documentIdFromContext">90279921</td>
+                        </tr>
+                        <tr>
+                            <td align="right"> Document Status:</td>
+                            <td>SAVED</td>
+                        </tr>
+                    
+                </table>
+            </div>
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<div id="tab-section" role="navigation">
+    <li id="help" class="ui-state-default ui-corner-top"><a href="Help.do" tabindex="19">Help</a></li>
+    <li id="personInfo" class="ui-state-default ui-corner-top"><a href="PersonInfo.do" tabindex="18">Person Info</a></li>
+    
+        
+        
+        
+        
+    
+    
+        
+            
+            
+                <li id="timeDetail" class="ui-state-default ui-corner-top"><a href="TimeDetail.do" tabindex="12">Time Detail</a></li>
+            
+            
+                <li id="clock" class="ui-state-default ui-corner-top"><a href="Clock.do" tabindex="11">Clock</a></li>
+            
+        
+        
+    
+
+</div>
+
+
+        </ul>
+    </div>
+    <div role="main" id="mainDiv">
+
+        <div class="msg-excol">
+            <div class="left-errmsg" role="alert">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    <span id="content">
+        
+<script src="js/underscore-1.3.1.min.js"></script>
+
+<script src="js/backbone-0.9.1.min.js"></script>
+<script src="js/common.calendar.backbone.js"></script>
+<script src="js/tk.calendar.backbone.js"></script>
+<script src="js/tk.ui.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function()
+    {
+        var d = new Date();
+        d = d.getTime();
+        var reloadVal = $('#reloadValue');
+        if (reloadVal.val().length == 0) {
+            reloadVal.val(d);
+            $('body').show();
+        } else {
+            reloadVal.val('');
+            location.reload();
+        }
+    });
+</script>
+
+<div style="clear:both;" class="">
+    <input type="hidden" name="reloadValue" value="" id="reloadValue">
+    <input type="hidden" name="beginPeriodDateTime" value="Sun Mar 20 00:00:00 2022" id="beginPeriodDate">
+    <input type="hidden" name="endPeriodDateTime" value="Sun Apr 3 00:00:00 2022" id="endPeriodDate">
+    <input type="hidden" name="isVirtualWorkDay" value="false" id="isVirtualWorkDay">
+    <input type="hidden" name="serverTimezone" value="America/Indiana/Indianapolis" id="serverTimezone">
+    <input type="hidden" name="userTimezone" value="America/Indiana/Indianapolis" id="userTimezone">
+    <input type="hidden" name="calNav" value="" id="calNav">
+    <input type="hidden" name="documentId" value="90279921" id="documentId">
+    <input type="hidden" name="prevDocumentId" value="90220321" id="prevDocumentId">
+    <input type="hidden" name="nextDocumentId" value="" id="nextDocumentId">
+    <input type="hidden" name="warningJson" value="[]" id="warningJson">
+    <input type="hidden" name="docEditable" value="true" id="docEditable">
+    <input type="hidden" name="canAddTimeblock" value="true" id="canAddTimeBlock">
+
+    
+    <!--
+        
+            Document Id: 90279921<br/>
+            Job Number: 0<br/>
+            Workarea Id: 85799<br/>
+            Task Id: 0<br/>
+            Earn Code: RGH<br/>
+            Begin Time: Tuesday, March 22, 2022, 7:42:00 PM<br/>
+            End Time: Tuesday, March 22, 2022, 11:06:00 PM<br/>
+            Hours: 3.4<br/>
+            Amount: 0<br/>
+            <br/>
+        
+            Document Id: 90279921<br/>
+            Job Number: 0<br/>
+            Workarea Id: 85799<br/>
+            Task Id: 0<br/>
+            Earn Code: RGH<br/>
+            Begin Time: Friday, March 25, 2022, 2:06:00 PM<br/>
+            End Time: Friday, March 25, 2022, 5:06:00 PM<br/>
+            Hours: 3<br/>
+            Amount: 0<br/>
+            <br/>
+        
+         -->
+    
+    <textarea name="timeBlockString" id="timeBlockString">[{&quot;isApprover&quot;:false,&quot;isPyProcessor&quot;:false,&quot;isSynchronousUser&quot;:true,&quot;canEditTb&quot;:false,&quot;canEditTBOvt&quot;:false,&quot;canAddTB&quot;:true,&quot;canEditTBAll&quot;:false,&quot;canEditTBAssgOnly&quot;:true,&quot;canEditHoursOnly&quot;:false,&quot;documentId&quot;:&quot;90279921&quot;,&quot;title&quot;:&quot;Cox: Research Scholars&quot;,&quot;earnCode&quot;:&quot;RGH&quot;,&quot;earnCodeDesc&quot;:&quot;Regular Pay Temporary&quot;,&quot;earnCodeType&quot;:&quot;T&quot;,&quot;start&quot;:&quot;2022-03-22T19:42:00-04:00&quot;,&quot;end&quot;:&quot;2022-03-22T23:06:00-04:00&quot;,&quot;startDate&quot;:&quot;03\/22\/2022&quot;,&quot;endDate&quot;:&quot;03\/22\/2022&quot;,&quot;startNoTz&quot;:&quot;2022-03-22T19:42:00&quot;,&quot;endNoTz&quot;:&quot;2022-03-22T23:06:00&quot;,&quot;startTimeHourMinute&quot;:&quot;07:42 PM&quot;,&quot;endTimeHourMinute&quot;:&quot;11:06 PM&quot;,&quot;startTime&quot;:&quot;19:42&quot;,&quot;endTime&quot;:&quot;23:06&quot;,&quot;id&quot;:&quot;2045826984&quot;,&quot;hours&quot;:3.4,&quot;amount&quot;:0,&quot;timezone&quot;:&quot;America\/Indiana\/Indianapolis&quot;,&quot;assignment&quot;:&quot;0_85799_0&quot;,&quot;tkTimeBlockId&quot;:&quot;2045826984&quot;,&quot;lunchDeleted&quot;:false,&quot;timeHourDetails&quot;:&quot;[{\&quot;earnCode\&quot;:\&quot;RGH\&quot;,\&quot;hours\&quot;:3.4,\&quot;amount\&quot;:0}]&quot;},{&quot;isApprover&quot;:false,&quot;isPyProcessor&quot;:false,&quot;isSynchronousUser&quot;:true,&quot;canEditTb&quot;:false,&quot;canEditTBOvt&quot;:false,&quot;canAddTB&quot;:true,&quot;canEditTBAll&quot;:false,&quot;canEditTBAssgOnly&quot;:true,&quot;canEditHoursOnly&quot;:false,&quot;documentId&quot;:&quot;90279921&quot;,&quot;title&quot;:&quot;Cox: Research Scholars&quot;,&quot;earnCode&quot;:&quot;RGH&quot;,&quot;earnCodeDesc&quot;:&quot;Regular Pay Temporary&quot;,&quot;earnCodeType&quot;:&quot;T&quot;,&quot;start&quot;:&quot;2022-03-25T14:06:00-04:00&quot;,&quot;end&quot;:&quot;2022-03-25T17:06:00-04:00&quot;,&quot;startDate&quot;:&quot;03\/25\/2022&quot;,&quot;endDate&quot;:&quot;03\/25\/2022&quot;,&quot;startNoTz&quot;:&quot;2022-03-25T14:06:00&quot;,&quot;endNoTz&quot;:&quot;2022-03-25T17:06:00&quot;,&quot;startTimeHourMinute&quot;:&quot;02:06 PM&quot;,&quot;endTimeHourMinute&quot;:&quot;05:06 PM&quot;,&quot;startTime&quot;:&quot;14:06&quot;,&quot;endTime&quot;:&quot;17:06&quot;,&quot;id&quot;:&quot;2045870329&quot;,&quot;hours&quot;:3,&quot;amount&quot;:0,&quot;timezone&quot;:&quot;America\/Indiana\/Indianapolis&quot;,&quot;assignment&quot;:&quot;0_85799_0&quot;,&quot;tkTimeBlockId&quot;:&quot;2045870329&quot;,&quot;lunchDeleted&quot;:false,&quot;timeHourDetails&quot;:&quot;[{\&quot;earnCode\&quot;:\&quot;RGH\&quot;,\&quot;hours\&quot;:3,\&quot;amount\&quot;:0}]&quot;}]</textarea>
+
+    
+    <textarea name="leaveBlockString" id="leaveBlockString"></textarea>
+    
+    </br>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="tkCal" class="ui-widget cal payCalendar" style="margin: 0px auto 0px auto; width:100%;">
+    
+        
+            
+        
+        
+        
+    
+
+    <table class="cal-header" role="presentation">
+        <tbody>
+        <tr>
+            
+                <label id="payPeriod_label" style="display: none">Pay Period sub-table</label>
+            <td align="left" width="30%" aria-labelledby="payPeriod_label">
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="calendar-payPeriod">
+
+    <table class="cal-header">
+		<tbody>
+			<tr>
+				<td align="left">
+					<span class="header-title-left">Year</span>
+                </td>
+                <td align="left">
+	                <select id="selectedCalendarYear" name="selectedCalendarYear">
+	                    
+	                        
+	                            
+	                                <option value="2022" selected="selected">2022</option>
+	                            
+	                            
+	                        
+	                    
+	                        
+	                            
+	                            
+	                                <option value="2021">2021</option>
+	                            
+	                        
+	                    
+	                </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="left">
+          			<span class="header-title-left">
+                        
+                            
+                                Current Pay Period
+                            
+                            
+                        
+                    </span>
+                </td>
+                <td align="left">
+                    <select id="selectedPayPeriod" name="selectedPayPeriod">
+                         <option value=''>-- select a pay period --</option>
+                         
+		                      
+		                          
+		                              <option value="2123" selected="selected">03/20/2022 - 04/02/2022</option>
+		                          
+		                          
+		                      
+                 		 
+		                      
+		                          
+		                          
+		                              <option value="2122">03/06/2022 - 03/19/2022</option>
+		                          
+		                      
+                 		 
+		                      
+		                          
+		                          
+		                              <option value="2121">02/20/2022 - 03/05/2022</option>
+		                          
+		                      
+                 		 
+		                      
+		                          
+		                          
+		                              <option value="2120">02/06/2022 - 02/19/2022</option>
+		                          
+		                      
+                 		 
+		                      
+		                          
+		                          
+		                              <option value="2119">01/23/2022 - 02/05/2022</option>
+		                          
+		                      
+                 		 
+		                      
+		                          
+		                          
+		                              <option value="2118">01/09/2022 - 01/22/2022</option>
+		                          
+		                      
+                 		 
+                    </select>
+		        </td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+            </td>
+            
+            <td align="center" width="40%">
+                
+                    <button id="nav_prev"
+                            class="ui-button ui-widget ui-state-default ui-corner-all ui-button-icon-only"
+                            role="button" title="Previous">
+                        <span class="ui-button-text">Previous</span>
+                    </button>
+                
+                <span class="header-title-center">Mar 2022 - Apr 2022</span>
+                
+            </td>
+            
+            <td align="right" width="30%">
+                <table role="presentation">
+                    <tbody>
+                    <tr>
+                        <td align="right">
+                            
+                                <span class="header-title-right">
+	       		                    <a href="TimeDetail.do?methodToCall=gotoCurrentPayPeriod"
+                                          target="_self" id="cpplink">
+                                           
+                                               
+                                                   Current Pay Period
+                                               
+                                               
+                                           
+                                       </a>
+                                </span>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            
+                                <span class="header-title-right">
+                                    <a href="TimeDetail.do?methodToCall=actualTimeInquiry&documentId=90279921"
+                                       target="_blank" id="atiLink">Actual Time Inquiry</a>
+                                </span>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="right">
+                            
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <div class="messages" role="alert">
+        
+        
+            <span class="warning"> </span> <br/>
+        
+        
+    </div>
+
+    <div id="tkCalContent">
+        <div id="tkCalContent_label" style="display: none">TK Calendar content table</div>
+        <table class="cal-table payCalendar-table" aria-labelledby="tkCalContent_label">
+            <thead>
+            
+            <tr>
+                
+                    <th class="ui-state-default week-header">Sun</th>
+                
+                    <th class="ui-state-default week-header">Mon</th>
+                
+                    <th class="ui-state-default week-header">Tue</th>
+                
+                    <th class="ui-state-default week-header">Wed</th>
+                
+                    <th class="ui-state-default week-header">Thu</th>
+                
+                    <th class="ui-state-default week-header">Fri</th>
+                
+                    <th class="ui-state-default week-header">Sat</th>
+                
+            </tr>
+            </thead>
+
+            <tbody>
+            
+            
+                <tr style="height:100px;">
+                    
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_0" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_0" title="Click on a day to enter time." class="day-number">20</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_1" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_1" title="Click on a day to enter time." class="day-number">21</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_2" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_2" title="Click on a day to enter time." class="day-number">22</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+            
+            
+        
+
+ 		
+        
+        
+
+        <div id="doNotShow_2045826984" class="event last-event assignment0">
+            <div id="timeblock_2045826984" 
+            	 class="event-title-false">
+                
+
+                
+                    
+                    
+                        <div>Cox: Research Scholars</div>
+                    
+                
+            </div>
+                07:42 PM - 11:06 PM
+            <div>
+                
+                    
+                        
+                            <div id="2053025906"
+                                 class="event-content">
+                                
+                                    
+                                        
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+
+                                        
+                                        
+                                            <span>RGH</span> - 3.4 hours
+                                        
+                                    
+                                    
+                                
+                            </div>
+                        
+                    
+                
+            </div>
+            <div class="lunch">
+                
+                    
+            </div>
+                
+        </div>
+    
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_3" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_3" title="Click on a day to enter time." class="day-number">23</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_4" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_4" title="Click on a day to enter time." class="day-number">24</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_5" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_5" title="Click on a day to enter time." class="day-number">25</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+            
+                
+            
+            
+        
+
+ 		
+        
+        
+
+        <div id="doNotShow_2045870329" class="event last-event assignment0">
+            <div id="timeblock_2045870329" 
+            	 class="event-title-false">
+                
+
+                
+                    
+                    
+                        <div>Cox: Research Scholars</div>
+                    
+                
+            </div>
+                02:06 PM - 05:06 PM
+            <div>
+                
+                    
+                        
+                            <div id="2053074905"
+                                 class="event-content">
+                                
+                                    
+                                        
+                                        
+                                            
+                                            
+                                                
+                                            
+                                        
+
+                                        
+                                        
+                                            <span>RGH</span> - 3 hours
+                                        
+                                    
+                                    
+                                
+                            </div>
+                        
+                    
+                
+            </div>
+            <div class="lunch">
+                
+                    
+            </div>
+                
+        </div>
+    
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_6" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_6" title="Click on a day to enter time." class="day-number">26</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+                </tr>
+            
+                <tr style="height:100px;">
+                    
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_7" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_7" title="Click on a day to enter time." class="day-number">27</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_8" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_8" title="Click on a day to enter time." class="day-number">28</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_9" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_9" title="Click on a day to enter time." class="day-number">29</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_10" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_10" title="Click on a day to enter time." class="day-number">30</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_11" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_11" title="Click on a day to enter time." class="day-number">31</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_12" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_12" title="Click on a day to enter time." class="day-number">1</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+
+                        
+                        
+                        
+                        
+                        
+                        
+
+                        <td id="day_13" class="create ui-state-default"  style="width:14%;padding-bottom:20px;">
+                            
+                            <div id="dayNumber_13" title="Click on a day to enter time." class="day-number">2</div>
+                            
+
+                            <div>
+                                
+                                    
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    
+                                    
+                                    
+                                
+                                
+                            </div>
+                        </td>
+                    
+                </tr>
+            
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="timesheet-routing">
+
+    
+
+
+    
+
+</div>
+
+    
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+<div id="timesheet-summary">
+    <div class="summaryTitle" style="clear:both; text-align:center; font-weight: bold; margin-bottom: 5px;">Summary</div>
+    <div id="timesheet-table-basic">
+        <table>
+            <colgroup>
+                <col>
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                            <col class="weeklyTotal">
+                        
+                        
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+                    
+                        
+                            <col class="weeklyTotal">
+                        
+                        
+                    
+                
+                    
+                        
+                        <col>
+                    
+                
+            </colgroup>
+            <thead>
+                <tr class="ui-state-default">
+                    <th></th>
+                    
+                        <th scope="col">Sun<br />03/20</th>
+                    
+                        <th scope="col">Mon<br />03/21</th>
+                    
+                        <th scope="col">Tue<br />03/22</th>
+                    
+                        <th scope="col">Wed<br />03/23</th>
+                    
+                        <th scope="col">Thu<br />03/24</th>
+                    
+                        <th scope="col">Fri<br />03/25</th>
+                    
+                        <th scope="col">Sat<br />03/26</th>
+                    
+                        <th scope="col">Week 1</th>
+                    
+                        <th scope="col">Sun<br />03/27</th>
+                    
+                        <th scope="col">Mon<br />03/28</th>
+                    
+                        <th scope="col">Tue<br />03/29</th>
+                    
+                        <th scope="col">Wed<br />03/30</th>
+                    
+                        <th scope="col">Thu<br />03/31</th>
+                    
+                        <th scope="col">Fri<br />04/01</th>
+                    
+                        <th scope="col">Sat<br />04/02</th>
+                    
+                        <th scope="col">Week 2</th>
+                    
+                        <th scope="col">Period Total</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+				<tr style="border-bottom-style: double; font-weight: bold;">
+                    <td>Worked Hours:</td>
+                    
+                    
+                        <td>0.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>3.40</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>3.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>6.40</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>0.00</td>
+                    
+                        <td>6.40</td>
+                    
+                </tr>
+                
+                    
+                        <tr>
+                            <td colspan="18" class="earnCodeCell">RGH: Regular Pay Temporary</td>
+						</tr>
+                        
+                            
+                            
+                                
+                                
+                                    
+                                        <tr style="border-bottom-style: double; font-weight: bold;">
+                                            <td class="assignment0">Cox: Research Scholars : $12.18 Rcd 0 BL-SCHR</td>
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                        
+                                                            
+                                                            
+                                                                <td>3.4</td>
+                                                            
+                                                        
+                                                    
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                        
+                                                            
+                                                            
+                                                                <td>3</td>
+                                                            
+                                                        
+                                                    
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                        
+                                                            
+                                                                <td class="assignment0">6.4</td>
+                                                            
+                                                            
+                                                        
+                                                    
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                    
+                                                        <td></td>
+                                                    
+                                                
+                                            
+                                                
+                                                    
+                                                        
+                                                            
+                                                                <td class="assignment0">6.4</td>
+                                                            
+                                                            
+                                                        
+                                                    
+                                                    
+                                                
+                                            
+                                        </tr>
+                                    
+                                
+                            
+                        
+                    
+                    <tr>
+                        <td class="earnGroupTotalRow">Regular Pay Totals</td>
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                    <td class="earnGroupTotalRow">3.40</td>
+                                
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                    <td class="earnGroupTotalRow">3.00</td>
+                                
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                    <td class="earnGroupTotalRow">6.40</td>
+                                
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                
+                                    <td class="earnGroupTotalRow"></td>
+                                
+                            
+                        
+                            
+                                
+                                    <td class="earnGroupTotalRow">6.40</td>
+                                
+                                
+                            
+                        
+                    </tr>
+                
+            </tbody>
+        </table>
+	</div>
+	
+</div>
+
+    
+    
+
+    
+    
+    	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="routeLog" class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons" role="tablist">
+    <h2 class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all" id="routeLogH2"
+        role="tab" aria-expanded="false" aria-selected="false" tabindex="0" onclick="toggleAriaExpanded(this.id)"  >
+        <a href="javascript:toggle('routeDiv');" aria-label="Route Log"><span class="ui-icon ui-icon-triangle-1-e"></span>
+            Route Log</a>
+    </h2>
+
+    <div id="routeDiv"
+         style="text-align: center; display:none;"
+         class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom">
+        <div id="routeLog_label" style="display: none">Route Log table</div>
+        <table width="100%" cellpadding="0" cellspacing="0" class="null" aria-labelledby="routeLog_label">
+            <tr>
+                <td width="100%">
+                    
+                        
+                        
+                            <iframe id="routeLogFrame" link="https://apps.iu.edu/kr-prd/kew/RouteLog.do?documentId=90279921"
+                                    height="400" width="100%" scrolling="auto"></iframe>
+                        
+                    
+
+
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+    
+
+    
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="note"
+	 class="ui-accordion ui-widget ui-helper-reset ui-accordion-icons"
+	 role="tablist">
+
+	<form name="TimesheetActionForm" method="post" action="/kpme-prd/Timesheet.do" enctype="multipart/form-data">
+		<input type="hidden" name="methodToCall" value="">
+		<input type="hidden" name="actionNoteId" value="">
+		<input type="hidden" name="page" value="TimeDetail">
+		<input type="hidden" name="documentId" value="90279921" id="documentId">
+		<input type="hidden" name="selectedCalendarYear" value="">
+		<input type="hidden" name="selectedPayPeriod" value="">
+
+
+		
+			
+			
+				<h2
+						class="ui-accordion-header ui-helper-reset ui-state-default ui-corner-all"
+						onclick="toggleAriaExpanded(this.id)" id="noteH2" aria-expanded="false"
+						role="tab"aria-selected="false" tabindex="0">
+					<a href="javascript:toggle('noteDiv');" aria-label="Note"><span class="ui-icon ui-icon-triangle-1-e"></span> Note</a>
+				</h2>
+				<div style="text-align: center; display:none;" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom"
+					 id="noteDiv">
+					<div id="noteLabel2" style="display: none">view/add notes table</div>
+					<table width="100%" class="noteTable" summary="view/add notes" aria-labelledby="noteLabel2">
+						<tbody>
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+	<th colspan="4" class="noteheadercell5">Create Note</th>
+</tr>
+<tr class="notethnormal2">
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+    <th align="left" class="notethnormal2" scope="col">Author</th>
+    <th align="left" class="notethnormal2" scope="col">Date</th>
+    <th align="left" class="notethnormal2" scope="col">Note</th>
+    <th align="left" class="notethnormal2" scope="col">Action</th>
+</tr>
+
+</tr>
+<tr>
+	<td class="infoline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	<td class="infoline">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+	
+		
+		
+			<td class="infoline">
+				<div align="left">
+					<textarea id="newNote.noteText" 
+					class="" 
+					title="* Note Text"
+					aria-label="Note Text"
+					onkeyup="textLimit(this, 780);"
+					rows="3" 
+					cols="50" 
+					tabindex="52"
+					name="newNote.noteText"></textarea>
+				</div>
+				<br/>                    
+				<div align="left">
+				<br />
+					<label for="attachmentFile">Attachment:</label>
+					 <input type="file" name="attachmentFile" size="30" tabindex="53" value="" id="attachmentFile">
+				</div>
+			</td>
+		
+	
+	
+		
+	  	     
+			<td class="infoline">
+				<div align="center">
+					<input type="image" property="methodToCall.insertNote"
+					
+						src="kew/images/tinybutton-save.gif" width="40" height="15" hspace="3" vspace="3" border="0" 
+						alt="Save" title="Save" styleClass="tinybutton"
+						onclick="addNote('insertNote'); this.form.submit(); " tabindex="55"/>
+				</div>
+			</td>
+		
+	
+</tr>
+
+						</tbody>
+					</table>
+				</div>
+			
+		
+		<input type="hidden" name="csrfToken" value="9339df3e-6183-46a7-9f34-7e6ef67032e9"/>
+	</form>
+</div>
+
+	</div>
+
+
+
+
+<div id="cal">
+    <div id="dialog-form" class="dialog-form">
+        <form name="TimeDetailActionForm" id="time-detail" method="post" action="/kpme-prd/TimeDetail.do">
+            <p id="validation" class="validation" title="Validation">All form fields are required.</p>
+
+            <input type="hidden" name="methodToCall" value="" id="methodToCall">
+            <input type="hidden" name="documentId" value="90279921" id="documentId">
+            <input type="hidden" name="tkTimeBlockId" value="" id="tkTimeBlockId">
+            <input type="hidden" name="lunchDeleted" value="" id="lunchDeleted">
+            <input type="hidden" name="lmLeaveBlockId" value="" id="lmLeaveBlockId">
+
+            <div class="ui-widget timesheet-panel" id="timesheet-panel">
+                <div id="timeblockLabel" style="display: none">add time block table</div>
+                <table aria-labelledby="timeblockLabel">
+                    <tr>
+                        <td><label for="startDate">Date range:</label></td>
+                        <td><input title="Date range Begin" type="text" id="startDate" name="startDate" size="10"/> -
+                            <input title="Date range End" type="text" id="endDate" name="endDate" size="10"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="selectedAssignment">Assignment:</label></td>
+                        <td>
+                            <div id="assignment-section">
+                                
+                                <select id="selectedAssignment" name="selectedAssignment">
+                                    <option value="" selected="selected">-- select an assignment --</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="selectedEarnCode">Earn code:</label></td>
+                        <td>
+                            <div id="earnCode-section">
+                                <select id='selectedEarnCode' name="selectedEarnCode">
+                                    <option value=''>-- select an earn code --</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="clockInSection">
+                        <td><span style="float:right;"><label for="startTimeHourMinute">In:</label></span></td>
+                        <td>
+                            <input name="startTimeHourMinute" id="startTimeHourMinute" type="text" size="10"/>
+
+                            
+                            <button style="width:20px; height:20px; vertical-align: text-top"
+                                    title="Supported formats:<br/>9a, 9 am, 9:00a, 9:00 am, 3p, 3 pm, 3:00p, 3:00 pm, 900, 15:00"
+                                    class="beginTimeHelp" tabindex="999" onclick="return false;">help
+                            </button>
+
+                            <input type="hidden" name="startTime" id="startTime"/>
+                        </td>
+                    </tr>
+                    <tr class="clockOutSection">
+                        <td><span style="float:right;"><label for="endTimeHourMinute">Out:</label></span></td>
+                        <td>
+                            <input name="endTimeHourMinute" id="endTimeHourMinute" type="text" size="10"/>
+
+                            
+                            <button style="width:20px; height:20px; vertical-align: text-top;"
+                                    title="Supported formats:<br/>9a, 9 am, 9:00a, 9:00 am, 3p, 3 pm, 3:00p, 3:00 pm, 900, 15:00"
+                                    class="endTimeHelp" tabindex="999" onclick="return false;">help
+                            </button>
+
+                            <input type="hidden" name="endTime" id="endTime"/>
+                        </td>
+                    </tr>
+                    <tr class="hourSection" style="display: none;">
+                        <td><label for="hours">Hours:</label></td>
+                        <td>
+                            <input id="hours" name="hours"/>
+                        </td>
+                    </tr>
+                    <tr class="amountSection" style="display: none;">
+                        <td><label for="amount">Amount:</label></td>
+                        <td>
+                            $ <input id="amount" name="amount"/>
+                        </td>
+                    </tr>
+                    <tr class="leaveAmountSection" style="display: none;">
+                        <td><label for="leaveAmount" id="unitOfTime">Amount:</label></td>
+                        <td>
+                            <input id="leaveAmount" name="leaveAmount" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="acrossDays" id="acrossDays" value="n" title="Check time if you want to cross days" checked="checked"/>
+                            <label for="acrossDays">Apply time to each day in range</label>
+                        </td>
+                    </tr>
+                    <!--  KPME-1446  -->
+                    <!-- IU enhancement to remove include weekend checkbox
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="spanningWeeks" id="spanningWeeks" value="n" title="Check if you want to span weeks over weekend"/>
+                                <label for="spanningWeeks">Include weekends</label>
+                            </td>
+                        </tr>
+                    -->
+                </table>
+            </div>
+            <input type="hidden" name="csrfToken" value="9339df3e-6183-46a7-9f34-7e6ef67032e9"/>
+        </form>
+        <div id="overtime-section" style="display:none;" class="timesheet-panel dialog-form">
+            <input type="hidden" name="originalOvtEarnCode" value="" id="originalOvtEarnCode">
+            <select id='overtimePref' name="overtimePref">
+            </select>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/template" id="earnCode-template">
+    <@ if (earnCode == "") { @>
+        <option value="<@= earnCode @>"><@= desc @></option>
+    <@ } else { @>
+        <option value="<@= earnCode @>"><@= earnCode + " : " + desc @></option>
+    <@ } @>
+</script>
+
+
+<script type="text/template" id="overtime-template">
+    <option value="<@= earnCode @>"><@= earnCode + " : " + desc @></option>
+</script>
+
+
+<script type="text/template" id="assignment-template">
+    <option value="<@= assignment @>"><@= desc @></option>
+</script>
+
+<div id="lm-transfer-dialog" title="Balance Transfer" style="display:none;">
+
+</div>
+
+<div id="lm-payout-dialog" title="Leave Payout" style="display:none;">
+
+</div>
+
+<div id="confirm-forfeiture-dialog" class="dialog-form" title="Confirm Forfeiture">
+    <form name="TimesheetSubmitActionForm" id="forfeiture-form" method="post" action="/kpme-prd/TimesheetSubmit.do">
+        <input type="hidden" name="loseOnSubmit" value="false" id="loseOnSubmit">
+
+        <div class="ui-widget timesheet-panel" id="timesheet-panel-forfeit">
+            <div id="timesheetforfeitLabel" style="display: none">timesheet forfeit table</div>
+            <table aria-labelledby="timesheetforfeitLabel">
+                <tr>
+                    <th>Accrual Category</th>
+                    <th>Forfeited Amount</th>
+                </tr>
+                <tbody>
+                
+                </tbody>
+            </table>
+        </div>
+        <input type="hidden" name="csrfToken" value="9339df3e-6183-46a7-9f34-7e6ef67032e9"/>
+    </form>
+</div>
+
+</span>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p align="right" role="contentinfo"><a id="privacyNotice" href="privacyPolicy.html" title="Privacy Policy" target="_blank" style="text-decoration: none;color: #9C2512;" tabindex="91">Privacy Notice</a>
+</p>
+<div style="visibility: hidden; height: 0px; width: 0px;">
+    <div id="dialog-processing" name="dialog-processing" >
+        <img src="images/loading.gif" style="vertical-align: middle;" alt="Processing" title="Processing" aria-label="Processing"/> Processing...
+    </div>
+</div>
+
+<div id="timOutDialog" title="Session Timeout Info" style="display: none; font-family: Trebuchet MS, Verdana, Arial, sans-serif !important; font-size: .9em !important;"  >
+    <label > Your current session is about to time out after 10 minutes. Do you want to continue session? </label>
+
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+    $( document ).ready(function() {
+        $(".skip").click(function(event){
+            var skipTo="#"+this.href.split('#')[1];
+            $(skipTo).attr('tabindex', -1).on('blur focusout', function () {
+                $(this).removeAttr('tabindex');
+            }).focus();
+        });
+    });
+
+    function loadTimeoutDialog() {
+        var sessionAlive = 1800;
+        var notifyBefore = 600;
+        setTimeout(function() {
+            $(function() {
+                $( "#timOutDialog" ).dialog({
+                    autoOpen: true,
+                    maxWidth:400,
+                    maxHeight: 200,
+                    width: 400,
+                    height: 200,
+                    modal: true,
+                    open: function(event, ui) {
+                        setTimeout(function(){
+                            $('#timOutDialog').dialog('close');
+                        }, notifyBefore * 1000);
+                    },
+                    buttons: {
+                        "Yes": function() {
+                            $.get("/about", function(data,status){
+                            });
+                            $('#timOutDialog').dialog("close");
+                            loadTimeoutDialog();
+                            location.reload();
+                        },
+                        "No": function() {
+                            $('#timOutDialog').dialog("close");
+                        }
+                    },
+                    close: function() {}
+                });
+            });
+        }, (sessionAlive - notifyBefore) * 1000);
+    };
+
+    loadTimeoutDialog();
+</script>
