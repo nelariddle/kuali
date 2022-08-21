@@ -82,7 +82,7 @@ for html_file in html_files:
 
     # creating an individual csv for each 2 week period
     # we will call it "Hours [first day of the period]"
-    csv_filename = "Hours "+str(min(current_dict.keys()))+".csv"
+    csv_filename = "2WeeksCSV/Hours "+str(min(current_dict.keys()))+".csv"
 
     # writing to the csv for individual periods
     with open(csv_filename, "w", newline='') as csv_file:
