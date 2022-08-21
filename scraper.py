@@ -7,7 +7,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
-# PATH = "C:\Program Files\Google\Chrome\Application\chrome.exe"
 driver = webdriver.Chrome(PATH)
 driver.get("https://apps.iu.edu/kpme-prd/Clock.do")
 
