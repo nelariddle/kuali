@@ -5,6 +5,6 @@ Kuali Time only allows you to see 2 weeks' worth of hours at a time, so I wrote 
 
 ## Contents
 - scraper.py: the python file that does all of the web navigation and scraping
-- hours.html: HTML manually downloaded from Kuali that was used to write the scraping code
+- practice folder: HTML manually downloaded from Kuali that I used to practice the scraping code on
 - All Hours.csv: the resultant csv from running the python file consisting of all dates and hours taken off Kuali Time
 - other csv files: the code also records each 2 week period in its own csv
