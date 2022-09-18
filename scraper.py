@@ -7,14 +7,15 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
+# PATH = "C:\Program Files\Google\Chrome\Application\chrome.exe"
 driver = webdriver.Chrome(PATH)
 driver.get("https://apps.iu.edu/kpme-prd/Clock.do")
 
 username = driver.find_element(By.ID, "username")
 password = driver.find_element(By.ID, "password")
 
-username.send_keys("nmriddle")
-password.send_keys("IUapplication2020")
+username.send_keys("")
+password.send_keys("")
 
 driver.find_element(By.NAME, "_eventId_proceed").click()
 driver.implicitly_wait(500)
