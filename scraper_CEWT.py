@@ -5,18 +5,19 @@ import datetime
 import csv
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import pandas as pd
 
-main_csv = "All Hours Cox.csv"
+main_csv = "All Hours CEWT.csv"
 
 # find the last recorded date in AllHours.csv and convert to datetime object
-last_date = None
-with open(main_csv, "r") as csv_file:
-    last_line = csv_file.readlines()[-1].split(",")[0]
-    last_date = datetime.date(int(last_line[:4]), int(
-        last_line[5:7]), int(last_line[8:]))
+last_date = datetime.date(2022, 5, 1)
+try:
+    with open(main_csv, "r") as csv_file:
+        last_line = csv_file.readlines()[-1].split(",")[0]
+        last_date = datetime.date(int(last_line[:4]), int(
+            last_line[5:7]), int(last_line[8:]))
+except:
+    pass
 
-print(last_date)
 
 PATH = "C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
@@ -55,21 +56,21 @@ while True:
         "td", {"class": re.compile(r"assignment[0-9]")})
 
     # finds if Cox is present in that week's jobs
-    cox_assignment_name = ""
+    cewt_assignment_name = ""
     for tag in assignment_tags:
         text = tag.get_text()
         try:
             float(text)
         except ValueError as e:
-            if "Cox" in tag.get_text():
-                cox_assignment_name = tag.get_text()
+            if "CEWT" in tag.get_text():
+                cewt_assignment_name = tag.get_text()
 
     # compiling the hours over the period into a list of lists (or list of 0's if no Cox)
-    if cox_assignment_name == "":
+    if cewt_assignment_name == "":
         hour_list = [0.0]*14
     else:
         hour_list = [[float(sib.get_text()) if sib.get_text() != '' else 0.0 for sib in soup.find_all(
-            "td", text=cox_assignment_name)[0].next_siblings if sib.get_text() != "\n"][j] for j in [x for x in range(15) if x != 7]]
+            "td", text=cewt_assignment_name)[0].next_siblings if sib.get_text() != "\n"][j] for j in [x for x in range(15) if x != 7]]
 
     # generating a dictionary of dates and hours for each date using BeautifulSoup functionality
     current_dict = dict(zip([datetime.date(int(year), int(month), int(
@@ -77,14 +78,14 @@ while True:
 
     # creating an individual csv for each 2 week period
     # we will call it "Hours [first day of the period]"
-    csv_filename = "2WeeksCSV/Hours "+str(min(current_dict.keys()))+".csv"
+    #csv_filename = "2WeeksCSV_CEWT/Hours "+str(min(current_dict.keys()))+".csv"
 
     # writing to the csv for individual periods
-    with open(csv_filename, "w", newline='') as csv_file:
-        writer = csv.writer(csv_file)
-        writer.writerow(["Date", cox_assignment_name])
-        for date, hours in current_dict.items():
-            writer.writerow([date, hours])
+    # with open(csv_filename, "w", newline='') as csv_file:
+    #     writer = csv.writer(csv_file)
+    #     writer.writerow(["Date", cewt_assignment_name])
+    #     for date, hours in current_dict.items():
+    #         writer.writerow([date, hours])
 
     # appending to our dictionary storing overall hours acquired from each file
     hours_dict.update(current_dict)
@@ -95,13 +96,17 @@ while True:
     driver.find_element(By.XPATH, "//button[@title='Previous']").click()
 
 # delete the last 14 lines, because there is a chance they have changed
-f = open(main_csv, "r+")
-lines = f.readlines()
-for i in range(14):
-    lines.pop()
-f = open(main_csv, "w+")
-f.writelines(lines)
-f.close()
+try:
+    f = open(main_csv, "r+")
+    lines = f.readlines()
+    for i in range(14):
+        if(lines != []):
+            lines.pop()
+    f = open(main_csv, "w+")
+    f.writelines(lines)
+    f.close()
+except:
+    pass
 
 
 # writing to the csv for overall hours
@@ -109,9 +114,3 @@ with open(main_csv, "a", newline='') as csv_file:
     writer = csv.writer(csv_file)
     for date in sorted(hours_dict.keys()):
         writer.writerow([date, hours_dict[date]])
-
-df = pd.read_csv(main_csv, header=None, names=["Date", "Hours"])
-df['Date'] = pd.to_datetime(df['Date'])
-sum = df[df["Date"] > datetime.datetime(2022, 6, 1)]["Hours"].sum()
-
-print("Total hours this year: ", sum)
